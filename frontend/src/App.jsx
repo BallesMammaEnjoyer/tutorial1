@@ -6,6 +6,7 @@ import Homepage from './pages/HomePage';
 import Navbar from './components/Navbar';
 import SelectionPage from './pages/SelectionPage';
 import LoginPage from "./pages/LoginPage";
+import ViewProductPage from "./pages/ViewProductPage.jsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/:id" element={<SelectionPage />} />
         <Route path="/:id/:id" element={<SelectionPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/product/:id" element={<ViewProductPage />} />
         {/* <Route path="/barn" element={<SelectionPage />} />
         <Route path="/skor" element={<SelectionPage/>}/> */}
       </Routes>
